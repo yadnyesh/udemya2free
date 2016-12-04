@@ -1,7 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  selector: 'bs-app',
+  template: `
+    <h1>{{pageTitle}}</h1>
+    <div>App Component Test</div>
+  `,
 })
-export class AppComponent  { name = 'Yadnyesh'; }
+export class AppComponent  {
+  pageTitle: string = "Dev Book Store"
+
+  showBook(): void{
+  // method logic goes here
+  }
+ }
+
